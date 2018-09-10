@@ -39,6 +39,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure btnTX1Click(Sender: TObject);
     procedure btnTX2Click(Sender: TObject);
+    procedure btnDisconnectClick(Sender: TObject);
   private
     FTSCANHandle: u32;
     FCounter: u32;
@@ -133,6 +134,12 @@ end;
 procedure TfrmTSCANDemo.btnConnectClick(Sender: TObject);
 begin
   ConnectTSCAN(nil, @FTSCANHandle);
+
+end;
+
+procedure TfrmTSCANDemo.btnDisconnectClick(Sender: TObject);
+begin
+  DisconnectAllTSCAN;
 
 end;
 

@@ -40,6 +40,7 @@ object frmTSCANDemo: TfrmTSCANDemo
       Caption = 'Disconnect'
       Enabled = False
       TabOrder = 1
+      OnClick = btnDisconnectClick
     end
   end
   object stat: TStatusBar
@@ -60,10 +61,6 @@ object frmTSCANDemo: TfrmTSCANDemo
     TabOrder = 2
     object shtTXRX: TTabSheet
       Caption = 'CAN TX / RX'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object lblType: TLabel
         Left = 24
         Top = 16
@@ -282,9 +279,6 @@ object frmTSCANDemo: TfrmTSCANDemo
         RowSelect = True
         TabOrder = 14
         ViewStyle = vsReport
-        ExplicitLeft = 312
-        ExplicitWidth = 250
-        ExplicitHeight = 150
       end
     end
   end
